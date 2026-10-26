@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VERT — Divulgação de TCCs</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="hero">
+  <div class="top"><button id="menu">☰</button><a href="#" id="brand"><span>VERT</span><b>DIVULGAÇÃO<br>DE TCCS</b></a><div class="topright"><button class="white" id="publish">＋ Publicar TCC</button><button class="profile" id="profile">♙</button></div></div>
+  <input id="search" class="search" placeholder="Buscar por projetos...">
+</header>
+<main>
+<section id="home" class="screen active"><div class="toolbar"><div class="heading"><i></i><div>DESTAQUES<small>Projetos em evidência</small></div></div><div class="cats" id="cats"><button class="chosen" data-cat="Todos">Todos</button><button data-cat="Robótica">Robótica</button><button data-cat="IA">IA</button><button data-cat="Acessibilidade">Acessibilidade</button><button data-cat="Meio ambiente">Meio ambiente</button><button data-cat="Automação">Automação</button></div></div><div id="grid" class="grid"></div><p id="empty" class="empty hidden">Nenhum projeto encontrado.</p></section>
+<section id="detail" class="screen detail"><button class="outline" id="back">← Voltar aos projetos</button><div id="detailContent"></div></section>
+<section id="publisher" class="screen publisher">
+ <nav class="pubnav"><strong><span class="pubicon">▣</span> Publicação</strong><div><button class="outline" id="help">ⓘ Ajuda</button><button class="outline" id="draft">▣ Salvar rascunho</button><button class="orange" id="topPost">➤ Postar</button></div></nav>
+ <div class="pubcontent"><h1>Publique seu TCC</h1><p class="muted">Preencha as etapas abaixo para apresentar seu projeto à comunidade. Você pode salvar um rascunho e continuar mais tarde.</p>
+ <div class="steps" id="steps"><div class="step on" data-n="1"><i>1</i>Detalhes do projeto</div><hr><div class="step" data-n="2"><i>2</i>Equipe e funções</div><hr><div class="step" data-n="3"><i>3</i>Detalhes técnicos</div><hr><div class="step" data-n="4"><i>4</i>Revisão</div></div>
+ <form id="form">
+  <section class="panel wizard on" data-step="1"><h2>Detalhes do projeto</h2><p class="muted">Forneça um título claro e uma descrição concisa.</p>
+   <label>Título do projeto<input name="title" required placeholder="Ex.: Sistema inteligente para auxílio à agricultura"></label>
+   <label>Descrição<textarea name="description" required placeholder="Descreva o projeto, seus objetivos e a solução proposta."></textarea></label>
+   <div class="row"><label>Categoria<select name="category" required><option value="">Selecione uma categoria</option><option>Robótica</option><option>IA</option><option>Acessibilidade</option><option>Meio ambiente</option><option>Automação</option><option>Desenvolvimento web</option><option>Outro</option></select></label><label>Ano de conclusão<input name="year" type="number" min="2000" max="2100" required placeholder="2026"></label></div>
+   <div class="row"><label>Curso<input name="course" required placeholder="Ex.: Técnico em Informática"></label><label>Instituição<input name="institution" required placeholder="Nome da escola ou faculdade"></label></div>
+   <div class="navbuttons"><span></span><button type="button" class="orange next">Continuar →</button></div>
+  </section>
+  <section class="panel wizard" data-step="2"><h2>Equipe e funções</h2><p class="muted">Adicione os integrantes e suas responsabilidades.</p><div class="labelrow"><b>Membros da equipe</b><button type="button" class="text" id="add">＋ Adicionar membro</button></div><div id="members"><div class="member"><input name="memberName[]" placeholder="Nome do integrante"><input name="memberRole[]" placeholder="Função (ex.: desenvolvimento)"><button type="button" class="remove">×</button></div></div><label>Descrição da equipe<textarea name="teamDescription" placeholder="Como as responsabilidades foram divididas?"></textarea></label><div class="navbuttons"><button type="button" class="outline prev">← Voltar</button><button type="button" class="orange next">Continuar →</button></div></section>
+  <section class="panel wizard" data-step="3"><h2>Detalhes técnicos</h2><p class="muted">Informe as tecnologias utilizadas e outros detalhes do desenvolvimento.</p>
+   <label>Tecnologias utilizadas<input name="technologies" placeholder="Ex.: HTML, CSS, JavaScript e Python"></label>
+   <label>Nível de desenvolvimento<select name="development"><option value="">Selecione o estágio atual</option><option>Ideia / planejamento</option><option>Em desenvolvimento</option><option>Protótipo funcional</option><option>Concluído</option></select></label>
+   <label>Link do projeto (opcional)<input name="projectLink" type="url" placeholder="https://github.com/usuario/projeto"></label>
+   <label>Materiais adicionais (opcional)<input name="materials" placeholder="Link para apresentação, vídeo ou documentação"></label>
+   <label>Link da imagem/capa (opcional)<input name="imageUrl" type="url" placeholder="https://..."></label>
+   <div class="navbuttons"><button type="button" class="outline prev">← Voltar</button><button type="button" class="orange next">Continuar →</button></div>
+  </section>
+  <section class="panel wizard" data-step="4"><h2>Revisão</h2><p class="muted">Confira os dados antes de enviar sua proposta.</p><div id="review" class="review"></div><label class="check"><input type="checkbox" name="confirm" required> Confirmo que as informações fornecidas estão corretas.</label><div class="navbuttons"><button type="button" class="outline prev">← Voltar</button><button type="submit" class="orange">Publicar projeto ➤</button></div></section>
+ </form></div>
+</section>
+</main>
+<div class="backdrop hidden" id="loginModal"><div class="modal"><button class="x" id="closeLogin">×</button><div class="modalbrand">VERT</div><h2 id="loginTitle">Entre na sua conta</h2><p class="muted" id="loginInfo">Acesse sua conta para publicar e acompanhar projetos.</p><form id="loginForm"><div id="nameWrap" class="hidden"><label>Nome completo<input name="name" placeholder="Seu nome"></label></div><label>E-mail<input name="email" type="email" required placeholder="voce@email.com"></label><label>Senha<input name="password" type="password" minlength="4" required placeholder="Sua senha"></label><button class="orange full" type="submit" id="loginSubmit">Entrar</button></form><p class="switchline"><span id="switchInfo">Ainda não tem uma conta?</span> <button class="text" type="button" id="switch">Criar conta</button></p><small class="muted">Protótipo demonstrativo: os dados de conta ficam apenas neste navegador.</small></div></div>
+<div class="backdrop hidden" id="successModal"><div class="success"><div class="checkmark">✓</div><h2>TCC publicado com sucesso!</h2><p>Seu projeto agora está disponível na plataforma e pode ser encontrado por outros usuários.</p><div class="successbuttons"><button class="outline" id="viewMine">◉ Ver meu TCC</button><button class="orange" id="goHome">⌂ Voltar ao início</button></div></div></div><div id="toast" class="toast hidden"></div>
+<script src="script.js"></script></body></html>
