@@ -6,12 +6,19 @@ Checklist de entrega do VERT
 [ ] Formulários sem recarregar a página
 
 [ ] Cadastro de projetos persistente
+
 [ ] Rascunhos persistentes
+
 [ ] Avaliações persistentes
+
 [ ] Console sem erros vermelhos
+
 [ ] Layout adaptado para celular
+
 [ ] Imagens com textos alternativos
+
 [ ] Cadastro, publicação e navegação testados
+
 [ ] Edição e remoção de projetos implementadas
 
 Feedbacks:
