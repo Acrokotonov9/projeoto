@@ -1,25 +1,25 @@
 
 Checklist de entrega do VERT
 
-[ ] Link publicado funcionando
+[ ✅ ] Link publicado funcionando
 
-[ ] Formulários sem recarregar a página
+[✅  ] Formulários sem recarregar a página
 
-[ ] Cadastro de projetos persistente
+[✅  ] Cadastro de projetos persistente
 
-[ ] Rascunhos persistentes
+[✅  ] Rascunhos persistentes
 
-[ ] Avaliações persistentes
+[✅  ] Avaliações persistentes
 
-[ ] Console sem erros vermelhos
+[ ✅ ] Console sem erros vermelhos
 
-[ ] Layout adaptado para celular
+[ ❌] Layout adaptado para celular
 
-[ ] Imagens com textos alternativos
+[ ❌ ] Imagens com textos alternativos
 
-[ ] Cadastro, publicação e navegação testados
+[ ✅ ] Cadastro, publicação e navegação testados
 
-[ ] Edição e remoção de projetos implementadas
+[ ❌] Edição e remoção de projetos implementadas
 
 Feedbacks:
 Usuário 2	Teve dificuldade em encontrar a área de publicação e acessar os detalhes dos projetos.	Melhorar a visibilidade dos botões de publicação e de acesso aos detalhes.
