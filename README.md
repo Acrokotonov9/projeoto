@@ -2,7 +2,9 @@
 Checklist de entrega do VERT
 
 [ ] Link publicado funcionando
+
 [ ] Formulários sem recarregar a página
+
 [ ] Cadastro de projetos persistente
 [ ] Rascunhos persistentes
 [ ] Avaliações persistentes
