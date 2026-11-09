@@ -1,14 +1,16 @@
 
-Checklist de Testes de Navegação
+Checklist de entrega do VERT
 
-| Funcionalidade testada | Usuário 1 | Usuário 2 | Usuário 3 | Usuário 4 | Usuário 5 |
-|---|---|---|---|---|---|
-| Acessar página inicial | ✔️ | ✔️ | ✔️ | ✔️| ✔️ |
-| Buscar um TCC | ✔️ | ✔️| ✔️ | ✔️ | ✔️ |
-| Visualizar detalhes de um projeto | ✔️ | ❌️ | ✔️ | ❌️ | ✔️ |
-| Acessar tela de publicação | ✔️ | ⬜ | ⬜ | ✔️ | ✔️ |
-| Navegar entre etapas do formulário | ✔️ | ⬜ | ⬜ | ✔️| ✔️ |
-| Finalizar publicação | ✔️| ⬜ | ⬜ | ✔️ | ✔️ |
+[ ] Link publicado funcionando
+[ ] Formulários sem recarregar a página
+[ ] Cadastro de projetos persistente
+[ ] Rascunhos persistentes
+[ ] Avaliações persistentes
+[ ] Console sem erros vermelhos
+[ ] Layout adaptado para celular
+[ ] Imagens com textos alternativos
+[ ] Cadastro, publicação e navegação testados
+[ ] Edição e remoção de projetos implementadas
 
 Feedbacks:
 Usuário 2	Teve dificuldade em encontrar a área de publicação e acessar os detalhes dos projetos.	Melhorar a visibilidade dos botões de publicação e de acesso aos detalhes.
